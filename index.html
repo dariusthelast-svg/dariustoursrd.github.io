@@ -1,12 +1,4 @@
 
-Corr
-Abrir
-Busc
-C
-J
-Just
-par
-hace
 html
 <!DOCTYPE html>
 <html lang="es">
@@ -15,33 +7,55 @@ html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darius Tours RD | Excursiones en República Dominicana</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; background-color: #f4f9f9; color: #333; }
-        header { background-color: #0077b6; color: white; padding: 40px 20px; }
-        h1 { margin: 0; font-size: 2.5em; }
-        p { font-size: 1.2em; }
-        .container { padding: 40px 20px; max-width: 800px; margin: auto; }
-        .btn-whatsapp { background-color: #25d366; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; margin-top: 20px; font-size: 1.1em; }
-        footer { background-color: #333; color: white; padding: 15px; position: fixed; bottom: 0; width: 100%; font-size: 0.9em; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f9f9; color: #333; }
+        header { background-color: #0077b6; color: white; padding: 50px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.8em; text-transform: uppercase; letter-spacing: 1px; }
+        header p { margin: 10px 0 0 0; font-size: 1.3em; opacity: 0.9; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        h2 { text-align: center; color: #0077b6; font-size: 2em; margin-bottom: 30px; }
+        .grid-tours { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .tour-card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; border-top: 5px solid #00b4d8; transition: transform 0.2s; }
+        .tour-card:hover { transform: translateY(-5px); }
+        .tour-card h3 { margin: 0 0 10px 0; color: #03045e; font-size: 1.4em; }
+        .tour-card p { margin: 0; color: #666; font-size: 1em; }
+        .cta-section { text-align: center; background-color: #03045e; color: white; padding: 40px 20px; border-radius: 10px; margin-top: 20px; }
+        .cta-section p { font-size: 1.2em; margin-bottom: 25px; }
+        .btn-whatsapp { background-color: #25d366; color: white; padding: 15px 35px; text-decoration: none; font-weight: bold; border-radius: 50px; display: inline-block; font-size: 1.2em; box-shadow: 0 4px 10px rgba(37,211,102,0.3); transition: background 0.3s; }
+        .btn-whatsapp:hover { background-color: #1ebd58; }
+        footer { text-align: center; padding: 25px; background: #222; color: #aaa; font-size: 0.9em; margin-top: 60px; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Darius Tours RD</h1>
-        <p>¡Tu aventura en la República Dominicana empieza aquí!</p>
+        <p>¡Tu aventura inolvidable en la República Dominicana empieza aquí!</p>
     </header>
 
     <div class="container">
-        <h2>Próximamente nuestra web oficial</h2>
-        <p>Estamos diseñando las mejores experiencias y excursiones para ti. Playas, ríos, montañas y el mejor turismo de Quisqueya.</p>
+        <h2>Nuestras Excursiones y Aventuras</h2>
         
-        <!-- Aquí cambiaremos luego por tu número real -->
-        <a href="https://wa.me" class="btn-whatsapp" target="_blank">Contactar por WhatsApp</a>
+        <div class="grid-tours">
+            <div class="tour-card"><h3>Isla Saona</h3><p>Paraíso de arena blanca y aguas cristalinas.</p></div>
+            <div class="tour-card"><h3>Isla Catalina</h3><p>El mejor snorkel y playas exclusivas.</p></div>
+            <div class="tour-card"><h3>Buggies</h3><p>Adrenalina pura por caminos llenos de barro y aventura.</p></div>
+            <div class="tour-card"><h3>Santo Domingo VIP</h3><p>Descubre la historia de la primera ciudad de América.</p></div>
+            <div class="tour-card"><h3>Samaná Completo</h3><p>Salto El Limón y el paradisíaco Cayo Levantado.</p></div>
+            <div class="tour-card"><h3>Los Haitises</h3><p>Naturaleza virgen, manglares y cuevas taínas.</p></div>
+            <div class="tour-card"><h3>Monkeyland</h3><p>Interactúa con amigables monos ardilla en su hábitat.</p></div>
+            <div class="tour-card"><h3>Zipline Adventure</h3><p>Vuela sobre las copas de los árboles a pura velocidad.</p></div>
+            <div class="tour-card"><h3>Safari Cultural</h3><p>Conoce la vida real de los campos dominicanos y plantaciones.</p></div>
+        </div>
+
+        <div class="cta-section">
+            <h3>¿Listo para reservar tu próxima aventura?</h3>
+            <p>Contáctanos directamente por WhatsApp para darte precios especiales y reservar tu cupo hoy mismo.</p>
+            <a href="https://wa.me" class="btn-whatsapp" target="_blank">📲 Reservar por WhatsApp</a>
+        </div>
     </div>
 
     <footer>
         &copy; 2026 Darius Tours RD. Todos los derechos reservados.
     </footer>
 
-</body>
-</html>
+
